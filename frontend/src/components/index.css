@@ -1,0 +1,22 @@
+body {
+  background: linear-gradient(to right, blue, pink);
+}
+
+.container {
+  max-width: 700px;
+  max-height: 600px;
+  padding: 10px 20px 30px 10px;
+  margin: auto;
+}
+
+.swiper-slide img {
+  width: 37rem;
+  height: 42rem;
+  border-radius: 2rem;
+  object-fit: cover;
+}
+
+.swiper-slide-shadow-left,
+.swiper-slide-shadow-right {
+  display: none;
+}
