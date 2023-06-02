@@ -5,13 +5,11 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import './slider.css';
 import { EffectCoverflow, Pagination, Navigation } from 'swiper';
-
 import { useEffect, useRef } from 'react';
-
-import slide_image_1 from './images/Girasoles.jpg';
-import slide_image_2 from './images/LaNocheEstrellada.jpg';
-import slide_image_3 from './images/MonaLisa.jpg';
-import slide_image_4 from './images/Grito.jpg';
+import slide_image_1 from '../images/Girasoles.jpg';
+import slide_image_2 from '../images/LaNocheEstrellada.jpg';
+import slide_image_3 from '../images/MonaLisa.jpg';
+import slide_image_4 from '../images/Grito.jpg';
 
 function Slider() {
   const swiperRef = useRef(null);

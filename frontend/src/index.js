@@ -1,15 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import reportWebVitals from './reportWebVitals';
-import Login from './components/routes/Login.jsx';
-import Dashboard from './components/routes/Dashboard.jsx';
-import EditProfile from './components/routes/EditProfile.jsx';
-import SignOut from './components/routes/SignOut.jsx';
-import Profile from './components/routes/Profile.jsx';
-import UsernameView from './components/routes/UsernameView.jsx';
+import Login from '../src/routes/Login.jsx';
+import Dashboard from '../src/routes/Dashboard.jsx';
+import EditProfile from '../src/routes/EditProfile.jsx';
+import SignOut from '../src/routes/SignOut.jsx';
+import Profile from '../src/routes/Profile.jsx';
+import UsernameView from '../src/routes/UsernameView.jsx';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
-ReactDOM.render(
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<Login/>} />
@@ -20,6 +20,5 @@ ReactDOM.render(
       <Route path="choose-username" element={<UsernameView />} />
     </Routes>
   </BrowserRouter>,
-  document.getElementById("root")
 );
 reportWebVitals();

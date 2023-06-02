@@ -1,15 +1,16 @@
 body {
   background: linear-gradient(to right, blue, pink);
+
+}
+
+.container {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   height: 100vh; /* Ajusta la altura según sea necesario */
-}
-
-.container {
   max-width: 700px;
   max-height: 600px;
-  padding: 10px 20px 30px 10px;
+  padding: 80px 20px 30px 10px;
   margin: auto;
   display: flex; /* Agrega */
   justify-content: center; /* Agrega */
