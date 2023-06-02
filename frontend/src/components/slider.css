@@ -1,5 +1,9 @@
 body {
   background: linear-gradient(to right, blue, pink);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100vh; /* Ajusta la altura según sea necesario */
 }
 
 .container {
@@ -7,6 +11,9 @@ body {
   max-height: 600px;
   padding: 10px 20px 30px 10px;
   margin: auto;
+  display: flex; /* Agrega */
+  justify-content: center; /* Agrega */
+  align-items: center; /* Agrega */
 }
 
 .swiper-slide img {
