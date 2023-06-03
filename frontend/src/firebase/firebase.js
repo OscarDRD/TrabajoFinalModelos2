@@ -25,3 +25,10 @@ const analytics = getAnalytics(app);
 export const auth = getAuth(app);
 const db = getFirestore(app);
 const storage = getStorage(app);
+
+export async function userExists(uid) {
+  const docRef = doc(db, "users", uid);
+  const res = await getDoc(docRef);
+  console.log(res);
+  return res.exists();
+}
