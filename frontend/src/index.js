@@ -7,8 +7,10 @@ import EditProfile from '../src/routes/EditProfile.jsx';
 import SignOut from '../src/routes/SignOut.jsx';
 import Profile from '../src/routes/Profile.jsx';
 import UsernameView from '../src/routes/UsernameView.jsx';
+import Lienzo from '../src/routes/Lienzo.jsx';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(
   <BrowserRouter>
     <Routes>
@@ -18,6 +20,7 @@ root.render(
       <Route path="signout" element={<SignOut />} />
       <Route path="u/:username" element={<Profile />} />
       <Route path="choose-username" element={<UsernameView />} />
+      <Route path="lienzo" element={<Lienzo />} />
     </Routes>
   </BrowserRouter>,
 );

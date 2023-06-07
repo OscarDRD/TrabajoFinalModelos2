@@ -1,0 +1,20 @@
+#contenedor2 {
+  display: flex;
+  align-items: center;
+  }
+#continue-button {
+    border: none;
+    background: url('../images/Botón.png');
+    align-items: center;
+    top: 50%;
+    right: 20px;
+    transform: translate(250%, 40%);
+    width: 512px;
+    height: 512px;
+    border-radius: 50%;
+}
+.cartas{
+  align-items: center;
+  display: flexbox;
+}
+  

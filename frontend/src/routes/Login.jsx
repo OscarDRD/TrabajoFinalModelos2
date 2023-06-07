@@ -5,6 +5,7 @@ import { auth, userExists } from '../firebase/firebase.js';
 import { GoogleAuthProvider, onAuthStateChanged, signInWithPopup } from 'firebase/auth';
 import { useNavigate } from "react-router-dom";
 import AuthProvider from '../components/authProvider.jsx';
+import LoadingComponent from '../components/LoadingComponent.jsx';
 
 /*
   Stages:
@@ -16,6 +17,7 @@ import AuthProvider from '../components/authProvider.jsx';
 */
 
 export default function Login(){
+    
     let navigate = useNavigate();
     //const [currentUser, setCurrentUser] = useState(null);
     const [state, setCurrentState] = useState(0);
@@ -65,6 +67,7 @@ export default function Login(){
         navigate('/choose-username');
     }
 
+
     if(state === 4){
         return(
             <div>
@@ -80,7 +83,7 @@ export default function Login(){
     }
     return(
         <AuthProvider onUserLoggedIn={handleUserLoggedIn} onUserNotLoggedIn={handleUserNotLoggedIn} onUserNotRegisterted={handleUserNotRegistered}>
-            <div>Loading...</div>
+            <LoadingComponent/>
         </AuthProvider>
     );
 
